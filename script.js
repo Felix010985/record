@@ -22,13 +22,13 @@ startBtn.onclick = async () => {
     };
 
     mediaRecorder.onstop = () => {
-      const blob = new Blob(recordedChunks, { type: 'video/webm' });
+      const blob = new Blob(recordedChunks, { type: 'video/mp4' });
       const url = URL.createObjectURL(blob);
       preview.src = url;
 
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'экран-запись.webm';
+      a.download = 'recorded.mp4';
       a.click();
     };
 

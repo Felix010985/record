@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Mazuki Recorder</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    video {
+      width: 80%;
+      margin-top: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mazuki Recorder</h1>
+  <button id="startBtn">Начать запись</button>
+  <button id="stopBtn" disabled>Остановить</button>
+  <video id="preview" controls></video>
+
+  <script src="script.js"></script>
+</body>
+</html>
